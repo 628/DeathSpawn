@@ -33,11 +33,11 @@ public class CreateCommand
         }
 
         Location loc = ((Player) sender).getLocation();
-        config.set("spawns." + name, loc);
+        config.set("spawns." + name + ".loc", loc);
 
-        String completed = ChatColor.translateAlternateColorCodes('&',
-                config.getString("lang.completed"));
+        String created = ChatColor.translateAlternateColorCodes('&',
+                config.getString("lang.created"));
 
-        sender.sendMessage(completed);
+        sender.sendMessage(created);
     }
 }

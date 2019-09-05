@@ -4,6 +4,9 @@ import dev.aello.deathspawn.commands.DeathspawnCommand;
 import dev.aello.deathspawn.listeners.DeathListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.File;
+import java.io.IOException;
+
 public class DeathSpawn extends JavaPlugin
 {
     private static DeathSpawn instance;
@@ -17,6 +20,19 @@ public class DeathSpawn extends JavaPlugin
         getServer().getPluginManager().registerEvents(new DeathListener(), this);
 
         getCommand("deathspawn").setExecutor(new DeathspawnCommand());
+    }
+
+    @Override
+    public void onDisable()
+    {
+        try
+        {
+            getConfig().save(new File(getDataFolder(), "config.yml"));
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
     }
 
     public static DeathSpawn getInstance()
