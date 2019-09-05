@@ -7,6 +7,10 @@
 ## Messages ###
 lang:
   teleported: "&6You awake in %SPAWN_NAME%."
+  created: "&aSuccessfully created a death spawn at your location!"
+  noperms: "&cInsufficient permissions!"
+  noexist: "&cThat spawn does not exist!"
+  alreadyexist: "&cThat spawn already exists!"
 
 
 # This section contains all of the death spawns

@@ -3,3 +3,9 @@ version: 1.0.0
 api-version: "1.12"
 main: dev.aello.deathspawn.DeathSpawn
 author: Tau
+
+commands:
+  deathspawn:
+    usage: /deathspawn <create/delete> <name>
+    description: Creates/deletes a deathspawn.
+    aliases: [ds]

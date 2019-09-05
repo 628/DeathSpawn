@@ -1,5 +1,6 @@
 package dev.aello.deathspawn;
 
+import dev.aello.deathspawn.commands.DeathspawnCommand;
 import dev.aello.deathspawn.listeners.DeathListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -14,6 +15,8 @@ public class DeathSpawn extends JavaPlugin
         saveDefaultConfig();
 
         getServer().getPluginManager().registerEvents(new DeathListener(), this);
+
+        getCommand("deathspawn").setExecutor(new DeathspawnCommand());
     }
 
     public static DeathSpawn getInstance()
