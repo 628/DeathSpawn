@@ -28,7 +28,7 @@ public class DeathListener implements Listener
                 event.getEntity().teleport(loc);
 
                 String message = ChatColor.translateAlternateColorCodes('&',
-                        config.getString("lang.teleported"));
+                        config.getString("lang.teleported").replace("{SPAWN_NAME}", s.toLowerCase()));
                 event.getEntity().sendMessage(message);
 
                 break;
