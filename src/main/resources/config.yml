@@ -1,0 +1,16 @@
+#########################
+#      DeathSpawn       #
+#   aello development   #
+#   https://aello.dev   #
+#########################
+
+## lang ###
+lang:
+
+
+# This section contains all of the death spawns
+# Use /deathspawn create <name> in-game to automatically add a spawn
+# Use /deathspawn remove <name> in-game to remove a spawn
+# It is not advisable to manually edit this section.
+spawns:
+

@@ -7,6 +7,6 @@ public class DeathSpawn extends JavaPlugin
     @Override
     public void onEnable()
     {
-
+        saveDefaultConfig();
     }
 }
