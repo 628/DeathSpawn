@@ -4,8 +4,9 @@
 #   https://aello.dev   #
 #########################
 
-## lang ###
+## Messages ###
 lang:
+  teleported: "&6You awake in %SPAWN_NAME%."
 
 
 # This section contains all of the death spawns
