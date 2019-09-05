@@ -6,7 +6,7 @@
 
 ## Messages ###
 lang:
-  teleported: "&6You awake in %SPAWN_NAME%."
+  teleported: "&6You awake in {SPAWN_NAME}."
   created: "&aSuccessfully created a death spawn at your location!"
   deleted: "&cSuccessfully deleted that death spawn!"
   noperms: "&cInsufficient permissions!"
